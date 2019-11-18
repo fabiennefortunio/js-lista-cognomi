@@ -16,14 +16,9 @@ lista_cognomi.push(cognome_utente);
 console.log(lista_cognomi);
 
 // ordinare alfabeticamente
-//lista_cognomi = lista_cognomi.concat(cognome_utente);
 lista_cognomi.sort();
 console.log(lista_cognomi);
 
-/*lista_cognomi = lista_cognomi.sort(function(a,b){return a - b});
-console.log(lista_cognomi);*/
-
-lista_cognomi.sort();
 
 //la pposizione del utente più uno.
 
