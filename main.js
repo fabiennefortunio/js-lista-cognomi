@@ -1,25 +1,37 @@
-//chiedi al utente il cognome
-
-
-var cognome = [];
-cognome_utente = prompt('Inserisci il tuo cognome');
-console.log(cognome);
 
 // Creazione di un array con i cognomi
 var lista_cognomi =['Fortunio', 'Torres', 'Parejo', 'Amatista'];
 console.log(lista_cognomi);
 
+//chiedi al utente il cognome
+
+var cognome_utente = prompt('Inserisci il tuo cognome');
+cognome_utente = cognome_utente.charAt(0).toUpperCase()+cognome_utente.slice(1);
+console.log(cognome_utente);
+
+
 // inserisco il cognome inserito dal utente nella nostra lista di cognomi
 
-cognome.push(cognome_utente);
-console.log(cognome);
-
-
-// ordinare alfabeticamente
-
-
-lista_cognomi = lista_cognomi.sort();
+lista_cognomi.push(cognome_utente);
 console.log(lista_cognomi);
 
+// ordinare alfabeticamente
+//lista_cognomi = lista_cognomi.concat(cognome_utente);
+lista_cognomi.sort();
+console.log(lista_cognomi);
 
-console.log(lista_cognomi.concat(cognome));
+/*lista_cognomi = lista_cognomi.sort(function(a,b){return a - b});
+console.log(lista_cognomi);*/
+
+lista_cognomi.sort();
+
+//la pposizione del utente più uno.
+
+for (posizione=0; posizione < lista_cognomi.length; posizione++){
+
+    if (lista_cognomi[posizione] == cognome_utente){
+        console.log(posizione + 1);
+    }
+
+
+}
