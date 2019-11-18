@@ -20,7 +20,7 @@ lista_cognomi.sort();
 console.log(lista_cognomi);
 
 
-//la pposizione del utente più uno.
+//la posizione del utente più uno.
 
 for (posizione=0; posizione < lista_cognomi.length; posizione++){
 
